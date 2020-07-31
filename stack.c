@@ -1,15 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-#define MAX 1024
+#include "stack.h"
 
 int count = 0;
-
-struct stack{
-    int items[MAX];
-    int top;
-};
-typedef struct stack st;
 
 void push(st *s, int new);
 void pop(st *s);
@@ -17,7 +9,7 @@ int isfull(st *s);
 int isempty(st *s);
 void createEmptyStack(st *s);
 void printStack(st *s);
-
+/*
 int main(int argc, char const *argv[]) {
     int ch;
     st *s = malloc(sizeof(st));
@@ -38,7 +30,7 @@ int main(int argc, char const *argv[]) {
     
     return 0;
 }
-
+*/
 void createEmptyStack(st *s) {
     s->top = -1;
 }
